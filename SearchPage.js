@@ -28,11 +28,11 @@ export default class SearchPage extends React.Component {
             <Text style={styles.buttonText}>Go</Text>
           </TouchableHighlight>
         </View>
-        <View>
-        <TouchableHighlight style={styles.button}
-          underlayColor='#99d9f4'>
-          <Text style={styles.buttonText}>Location test</Text>
-        </TouchableHighlight>
+        <View style={styles.location}>
+          <TouchableHighlight style={styles.button}
+            underlayColor='#99d9f4'>
+            <Text style={styles.buttonText}>Location</Text>
+          </TouchableHighlight>
         </View>
       </View>
     );
@@ -83,5 +83,10 @@ const styles = StyleSheet.create({
     borderColor: '#48BBEC',
     borderRadius: 8,
     color: '#48BBEC'
+  },
+  location: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'stretch'    
   }
 }); 
